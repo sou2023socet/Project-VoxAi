@@ -1,0 +1,266 @@
+SCHOOL OF TECHNOLOGY, DESIGN AND COMPUTER APPLICATION
+COLLEGE OF TECHNOLOGY	
+SILVER OAK COLLEGE OF ENGINEERING & TECHNOLOGY
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING
+
+A Report on
+VoxAi – AI-Powered Information Assistant
+Empower People(@ Viksit Bharat 2047)
+Under Subject of
+PROBLEM BASED LEARNING – I
+Semester - V
+
+Submitted by
+SAMEER KUMAR (2301031800091)
+ ARAMBHADIYA SUMIT MANSHKHLAL (2301031800005)
+SHAH MANTHAN SHAILESHKUMAR (2301031800094)
+
+
+Silver Oak University
+CERTIFICATE
+
+
+
+
+This is to certify that the project entitled “VoxAi” has been carried out by “Sameer Kumar (2301031800091)”, “Arambhadiya Sumit M. (2301031800005)” & “Shah Manthan S. (2301031800094)” under my guidance in fulfillment of the Problem Based Learning-I (1010003391) Subject of Bachelor of Engineering in Computer Science & Engineering – 5th Semester of Silver Oak University, Ahmedabad during the academic year 2025- 2026.
+
+
+
+
+
+
+
+Mrs. Bhumi Shah	Mr. Mayuresh Kulkarni
+Internal Guide	Head of the Department
+
+
+
+
+
+
+
+
+
+
+ACKNOWLEDGEMENT
+
+
+We are heartily thankful to our supervisor, Mrs. Bhumi Shah, whose encouragement, supervision and support from the preliminary to the concluding level enabled me to develop an understanding of the subject. At the end, we offer my regards and blessings to all of those who supported us in any respect during the completion of the project and to our college for providing resources and materials.
+
+We would like to extend my gratitude to Mr. Mayuresh Kulkarni, Head of Computer Science & Engineering Department, Silver Oak college of Engineering and Technology, Ahmedabad, for his continuous encouragement and motivation.
+
+Last but not the least we would like to mention here that we are greatly indebted to each and everybody who has been associated with our project at any stage but whose name does not find a place in this acknowledgement.
+Yours Sincerely,
+								VoxAi Team
+
+
+ABSTRACT
+
+VoxAi is an intelligent AI-powered assistant designed to bridge the information gap between individuals and opportunities. The platform focuses on empowering students, job seekers, and lifelong learners by providing real-time, personalized information about government schemes, scholarships, job openings, skill development courses, and educational resources.
+
+The aim of VoxAi is to support the Viksit Bharat 2047 vision, aligning with India’s mission of digital empowerment, inclusive education, and economic growth through accessible information technology. VoxAi uses natural language processing (NLP) and machine learning (ML) to provide accurate and up-to-date data in an interactive, user-friendly chatbot interface.
+
+By integrating government APIs, verified news sources, and educational portals, VoxAi creates a centralized knowledge ecosystem that promotes growth, innovation, and digital literacy across all age groups.
+
+
+
+
+
+
+
+
+
+TABLE OF CONTENT
+Chapter No.		 	Title						Page No.
+
+ACKNOWLEDGEMENT 					          i
+ABSTRACT								ii
+LIST OF FIGURES							iii
+LIST OF TABLES							iv
+1 		INTRODUCTION 							1
+1.1 Project Summary
+1.2 Purpose
+1.3Scope
+1.4 Technical and Literature Review
+
+2 		SYSTEM REQUIREMENT STUDY
+2.1User Characteristics
+2.2Hardware and Software Characteristics
+2.2.1Hardware Requirements
+2.2.2Software Requirements
+
+3 		SYSTEM ANALYSIS
+3.1 Study of Current System
+3.2 Problems in Existing Systems
+3.3 Requirement of New System
+3.3.1 Functional Requirement
+3.3.2 Non-functional Requirement
+3.4 Feasibility Study
+3.5 Main Modules of New System (wireframe OR UML Diagram)
+
+4 		LIMITATION AND FUTURE ENHANCEMENT
+5 		TIMELINE CHART
+6		CONCLUSION
+7		REFERENCE
+
+1. INTRODUCTION
+1.1 Project Summary
+VoxAi is an AI-driven chatbot platform designed to seamlessly integrate a wide range of services aimed at empowering individuals with the knowledge, resources, and opportunities necessary to succeed in education, career, and personal growth. The platform provides personalized guidance on government schemes, scholarships, job opportunities, and educational pathways based on individual user profiles. By offering real-time updates and interactive support, VoxAi functions as a comprehensive, centralized assistant for students, professionals, and lifelong learners, aiming to democratize access to crucial information and bridge the existing knowledge gap in the career and education sectors.
+1.2 Purpose
+The primary purpose of the VoxAi project is to solve the problem of information fragmentation. Currently, critical information regarding scholarships, government schemes, job openings, and educational courses is scattered across numerous disconnected websites and portals. This makes it difficult, time-consuming, and overwhelming for individuals to find relevant and timely opportunities.
+VoxAi aims to centralize this information and deliver it to users in a personalized and intuitive manner through an AI-powered chatbot. The goal is to empower users by providing a single, reliable, and easy-to-use platform that simplifies their decision-making process for educational and professional advancement.
+
+1.3 Scope
+The scope of this project is to design, develop, and deploy a fully functional AI chatbot platform with the following core capabilities:
+In-Scope:
+Chatbot Interface: A natural language processing (NLP) interface for users to interact with the system.
+Knowledge Base: Aggregation and management of data related to government schemes, scholarships, job listings, and educational courses.
+Personalization Engine: An AI/ML model that provides tailored recommendations to users based on their profile, interests, and interaction history.
+User Profiles: Functionality for users to create and manage their profiles to receive personalized content.
+Real-time Notifications: A system to send users alerts about deadlines, new job openings, and relevant schemes.
+Sector-Based News and Updates: Curated content feeds on technology, career trends, and education.
+Out-of-Scope:
+Direct submission of applications (the platform will guide users to the official application portals but will not handle submissions itself).
+Processing of financial transactions or aid distribution.
+Accredited content delivery (it is a guidance platform, not an e-learning course provider).
+Direct human-to-human counseling services.
+
+
+1.4 Technical and Literature Review 
+The development of VoxAi is grounded in established principles of artificial intelligence, natural language processing, and recommender systems.
+Literature Review: The concept addresses the "knowledge gap" prevalent in modern society, where information exists but is not easily accessible. Research in Personalized Learning Environments (PLEs) highlights the effectiveness of tailoring educational content to individual needs, which significantly improves user engagement and outcomes. Similarly, studies on Recommender Systems in e-commerce and media demonstrate their power in filtering information and preventing user overload, a principle directly applicable to career and educational opportunities.
+Technical Review: The proposed system will be built on a modern technology stack. The backend will leverage Python with frameworks like Flask or Django for its robust support of AI/ML libraries such as TensorFlow and spaCy for NLP. The recommendation engine will be developed using machine learning algorithms like collaborative filtering or content-based filtering. The frontend will be a responsive web application built with a JavaScript framework like React or Angular to ensure a seamless user experience. The entire system will be deployed on a cloud platform (e.g., AWS, Google Cloud) to ensure scalability, reliability, and security.
+
+
+
+2. SYSTEM REQUIREMENT STUDY
+2.1 User Characteristics 
+The platform is designed for a diverse audience with varying technical skills but a common goal of self-improvement. The primary user groups include:
+Students (High School & University): Seeking scholarships, project ideas, exam updates, and guidance on higher education pathways.
+Job Seekers (Graduates & Professionals): Looking for job openings, career advice, and information on in-demand skills.
+Lifelong Learners: Professionals aiming to upskill or re-skill by finding relevant courses, certifications, and workshops.
+Freelancers: Searching for freelance opportunities and deals on technical software.
+2.2 Hardware and Software Characteristics
+2.2.1 Hardware Requirements
+Client-Side: A standard modern computer, tablet, or smartphone with a stable internet connection.
+Server-Side: A cloud-based server with a minimum of 4 vCPUs, 16 GB RAM, and 100 GB SSD storage, with auto-scaling capabilities to handle variable loads.
+2.2.2 Software Requirements
+Client-Side: Any modern web browser (e.g., Chrome, Firefox, Safari, Edge).
+Server-Side:
+Operating System: Linux (e.g., Ubuntu 22.04).
+Web Server: Nginx or Apache.
+Database: PostgreSQL for structured data and MongoDB or Firestore for unstructured data.
+Backend: Python 3.9+ / Node.js 18+.
+AI/ML Libraries: TensorFlow, PyTorch, Scikit-learn, spaCy.
+Frontend: React 18+ / Angular 16+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. SYSTEM ANALYSIS
+3.1 Study of Current System 
+The current "system" is not a single system but a fragmented ecosystem. Individuals rely on a combination of:
+Manually browsing dozens of government websites, university portals, and corporate career pages.
+Using generic job boards like LinkedIn or Indeed, which lack deep personalization for educational schemes.
+Following social media pages or news outlets for updates, which are often inconsistent.
+Word-of-mouth or seeking advice from career counselors, which can be costly or limited in scope.
+3.2 Problems in Existing Systems 
+This fragmented approach leads to several key problems:
+Information Overload: Users are overwhelmed with irrelevant data.
+Missed Opportunities: It is easy to miss deadlines or newly announced schemes.
+Lack of Personalization: The information is not tailored to an individual's specific needs or qualifications.
+Time-Consuming: The process of searching for and vetting information is highly inefficient.
+Outdated Information: Many websites are not regularly updated.
+
+
+
+3.3 Requirement of New System
+3.3.1 Functional Requirement
+User Registration: The system shall allow users to register and create a personal profile.
+Chatbot Interaction: The system shall provide an NLP-based chat interface to answer user queries.
+Information Retrieval: The system shall fetch and display information on schemes, jobs, scholarships, and courses.
+Personalized Recommendations: The system shall generate and display personalized recommendations.
+Notification Alerts: The system shall send real-time notifications about important updates and deadlines.
+Admin Panel: The system shall have a dashboard for administrators to manage the knowledge base and user data.
+3.3.2 Non-functional Requirement
+Performance: The chatbot's response time should be under 2 seconds for typical queries.
+Security: All user data must be encrypted both in transit and at rest.
+Scalability: The system must be able to handle at least 10,000 concurrent users.
+Availability: The system shall have an uptime of 99.9%.
+Usability: The interface must be intuitive and accessible to users with minimal technical expertise.
+3.4 Feasibility Study
+Technical Feasibility: The project is technically feasible. The required technologies (AI, NLP, web development) are mature and well-documented. There are numerous open-source libraries and cloud services available that can accelerate development.
+Economic Feasibility: The project is economically viable. The initial investment includes development costs and cloud hosting fees. Monetization can be explored through premium features, partnerships with educational institutions, or corporate sponsorships. The value provided to users justifies the operational costs.
+Operational Feasibility: The project is operationally feasible. Once deployed, the system can be maintained by a small technical team. The AI and data aggregation processes can be highly automated, minimizing the need for constant manual intervention.
+3.5 Main Modules of New System A UML Component Diagram would visually represent these modules and their interactions.
+User Interface (UI) Module: The frontend web application that users interact with.
+Chatbot Core (NLP Engine): Processes natural language queries from the user, determines intent, and formulates responses.
+Knowledge Base Module: The database and data aggregation pipelines that store and update all information.
+Recommender Engine: The ML module that analyzes user profiles and behavior to generate personalized suggestions.
+User Management Module: Handles user authentication, authorization, and profile data.
+Notification Service: Manages and dispatches real-time alerts via email or push notifications.
+Admin Dashboard: A secure interface for administrators to oversee the system, manage content, and view analytics.
+
+4. LIMITATION AND FUTURE ENHANCEMENT
+Limitations:
+Data Dependency: The accuracy of the information is entirely dependent on the quality and timeliness of the source APIs and websites it scrapes.
+Language Support: The initial version will only support the English language.
+Contextual Understanding: While advanced, the NLP model may struggle with highly ambiguous or complex queries.
+No Human Fallback: The system does not currently include an option to escalate a conversation to a human expert.
+
+Future Enhancement:
+Multi-language Support: Expanding the chatbot to serve users in multiple regional languages.
+Live Expert Consultation: Integrating a feature for users to book sessions with career counselors.
+Community Platform: Building a peer-to-peer forum for users to interact and share experiences.
+Skill Tracking & Gamification: Adding features to track user progress in skill development and award badges.
+Deeper API Integration: Directly integrating with university and job application platforms to streamline processes.
+
+
+
+5. TIMELINE CHART
+
+
+
+
+
+
+
+
+
+6. CONCLUSION
+The VoxAi project presents a robust and feasible solution to the significant challenge of information overload in the education and career sectors. By leveraging artificial intelligence to create a centralized and personalized platform, it will empower millions of individuals to make better-informed decisions, discover new opportunities, and achieve their full potential. The system is designed to be scalable, secure, and user-friendly, positioning it to become an indispensable tool for personal and professional development in an increasingly competitive world.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7. REFERENCE
+Ricci, F., Rokach, L., & Shapira, B. (2011). Introduction to Recommender Systems Handbook. Springer.
+Jurafsky, D., & Martin, J. H. (2020). Speech and Language Processing. Prentice Hall.
+Chen, L. et al. (2018). Artificial Intelligence in Education: A Review. IEEE Access.
+Gartner, Inc. (2022). Hype Cycle for Artificial Intelligence. Retrieved from Gartner Research.
